@@ -1,0 +1,265 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;600;900&family=Poppins:wght@400;600&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Spartan',sans-serif;
+}
+h1{
+    font-size: 75px;
+    line-height: 64px;
+    color: #222;
+}
+h2{
+    font-size: 66px;
+    line-height: 54px;
+    color: #222;
+}
+h4{
+    font-size: 40px;
+    color: #222;
+}
+h5{
+    font-size: large;
+}
+h6{
+    font-weight: 700;
+    font-size: 20px;
+}
+p{
+    font-size: 20px;
+    color: #465b52;
+    margin: 15px 0 20px 0;
+}
+.section-p1{
+    padding: 60px 80px;
+}
+.section-m1{
+    margin:40px 0;
+}
+body{
+    width: 100%;
+}
+
+
+
+
+
+/*  header  */
+
+
+
+
+#header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 80px;
+    background: #e3e6f3;
+    box-shadow: 0 5px 15px rgba(165, 165, 165, 0.6);
+    z-index: 999;
+    position: sticky;
+    top: 0;
+    
+}
+
+#navbar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#navbar li{
+    list-style: none;
+    padding: 0 20px;
+    position: relative;
+}
+
+#navbar li a{
+    text-decoration: dotted;
+    font-size: 20px;
+    font-weight: 600;
+    color: #1a1a1a;
+    transition: 0.3 ease;
+}
+
+#navbar li a:hover,
+#navbar li a.active{
+    color: #319a93;
+}
+
+#navbar li a.active::after,
+#navbar li a:hover::after{    /*pseudo class*/
+    content: "";
+    width: 30px;
+    height: 2px;
+    background-color: #319a93;
+    position: absolute;
+    bottom: -4px;
+    left: 20px;
+}
+
+
+
+
+/*Home page*/
+
+
+
+
+#hero{
+    background-image: url(/img/hero.jpg);
+    height: 90vh;
+    width: 100%;
+    background-size: cover;
+    background-position: top 25% right 0;
+    padding: 0 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+#hero h4{
+    padding-bottom: 15px;
+}
+
+#hero h1{
+    color: #088178;
+}
+
+#hero button{
+    font-size: larger;
+    background-color: rgb(213, 209, 209);
+   /* background-color: transparent;*/
+    color: #000000;
+    padding: 10px 40px 15px 35px;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    font-weight: 700;
+}
+
+
+
+
+/* feature section*/
+
+#feature{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+#feature .fe-box{
+    width: 280px;
+    text-align: center;
+    padding: 25px 15px;
+    box-shadow: 25px 20px 34px rgba(255, 234, 234, 0.3);
+    border: 1px solid #cce7d0;
+    border-radius: 4px;
+    margin: 15px 0;
+}
+
+#feature .fe-box img{
+    height: 140px;
+    width: 180px;
+    margin-bottom: 10px;
+}
+
+#feature .fe-box:hover{
+    box-shadow: 10px 10px 54px rgba(72, 62, 221,0.1);
+}
+
+#feature .fe-box h6{
+    display: inline-block;
+    padding: 9px 8px 6px 8px;
+    line-height: 1;
+    border-radius: 4px;
+    color: #088178;
+    background-color: #fddde4;
+}
+
+#feature .fe-box:nth-child(2) h6{
+    background-color: #cdeddc;
+}
+
+#feature .fe-box:nth-child(3) h6{
+    background-color: #f2e57d;
+}
+
+#feature .fe-box:nth-child(4) h6{
+    background-color: rgb(212, 157, 237)
+}
+
+#feature .fe-box:nth-child(5) h6{
+    background-color: rgb(152, 174, 240)
+}
+
+
+/*feature products*/
+
+
+#product1 {
+    text-align: center;
+}
+
+#product1 .pro-container{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+    flex-wrap: wrap;
+}
+
+#product1 .pro{
+    width: 23%;
+    min-width: 250px;
+    padding: 10px 12px;
+    border: 1px solid #cce7d0;
+    border-radius: 25px;
+    cursor: pointer;
+    box-shadow: 20px 20px 30px rgba(0, 0, 0,0.2);
+    margin: 15px 0;
+    position: relative;
+}
+
+#product1 .pro:hover{
+    box-shadow: 20px 20px 30px rgba(0, 0, 0,0.5);
+} 
+
+#product1 .pro img{
+    width: 60%;
+    border-radius: 20px;
+}
+
+#product1 .pro .des{
+    text-align: start;
+    padding: 10px 0;
+}
+
+#product1 .pro .des span{
+    color: #606063;
+    font-size: 20px;
+}
+
+#product1 .pro .des i{
+    font-size: 12px;
+    color: rgb(243, 181 , 25);
+}
+
+#product1 .pro .des h4{
+    padding-top: 12px;
+    font-size: 25px;
+    font-weight: 700;
+    color: #088178;
+}
+
+#product1 .pro .cart{    /*not working as cart is not changing pointer and color*/
+    width: 60px;
+    height: 60px;
+    line-height: 40px;
+    border-radius: 50px;
+    background-color: #e8f6ea;
+    font-weight: 500;
+    color: #088178;
+}
